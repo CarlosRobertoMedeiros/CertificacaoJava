@@ -1,0 +1,20 @@
+DOCMENTAÇÃO GERAL
+  - Nomes de Varniáveis inválidas
+  
+    int 2alunos; // não pode iniciar com dígitos
+	int quantidade alunos; // não pode ter espaços
+	int new; // new é uma palavra reservada do Java
+
+
+- Tipos Primitivos (Continuar Página 50)
+	boolean / 
+	char
+	byte
+	short
+	int
+	long
+	float
+	double
+
+
+
