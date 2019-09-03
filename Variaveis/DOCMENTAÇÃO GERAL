@@ -1,4 +1,33 @@
 DOCMENTAÇÃO GERAL
+  
+Escopo de Variáveis
+	1 - Escopo Local
+		Dentro de um Método ou Construtor
+		Ex: Variáveis Local Arquivo: EscopoDeVariaveisLocais.java
+			Uma variável local é uma variável que foi definida dentro de um método ou um construtor, e essas variáveis locais só poderão ser acessadas, dentro daquele escopo.
+			Escopos válidos são aqueles definidos no:
+			 	- Próprio método; 
+			 	- Construtor informado através de um parâmetro ou definidos internamente
+			 	- Dentro de blocos específicos, como if, for ou while
+
+	2 - Escopo Variável de Instância ou Objeto
+		Essa variável pode ser acessada dentro de qualquer lugar dentro da minha instância ou do meu objeto
+		Quando eu tenho variáveis de instância também chamadas de (variáveis de objeto, atributo ou membro), eu posso acessar tanto dentro do construtor, quanto dentro de métodos(Exceto em métodos estáticos)
+
+	3 - Variável de Classe(Estática)
+		Uma variável estática, ou variável de classe, existe uma única para aquela classe
+		Uma variável estática, pode ser acessada através de qualquer escopo(Dentro de um método local, dentro de um construtor, dentro de um outro método, através da referência da classe(pessoa.id), através da referência da instância(p.id))
+
+		Um método estático também pode acessar variáveis estáticas
+
+		Regra Geral
+			- Variáveis estáticas podem ser acessadas de qualquer lugar, desde que sejam respeitados os modificadores de acesso, podem ser acessadas através do 
+			nome da classe, ou através de instância da classe e ou do tipo
+
+			Continuar vídeo a partir dos 14:00 -> Aula 1 Certificação
+
+
+
   - Nomes de Varniáveis inválidas
   
     int 2alunos; // não pode iniciar com dígitos
