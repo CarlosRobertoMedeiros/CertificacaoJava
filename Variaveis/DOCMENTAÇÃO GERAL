@@ -27,6 +27,108 @@ Escopo de Variáveis
 			Continuar vídeo a partir dos 14:00 -> Aula 1 Certificação
 
 
+	Obs: Sobre Variáveis
+
+	O QUE NÃO SE PODE SOBRE VARIÁVEIS LOCAIS
+	
+	- Não pode existir 2 variáveis locais com o mesmo nome
+		- (O compilador informa dizendo que uma variável já foi definida com aquele nome "java:15: error: variable p is already defined in method main(String[])")
+
+	- Não podem existir 2 variavéis locais com o mesmo nome mesmo que uma vem a ser passada como parâmetro
+
+	- Não pode existir em uma classe uma variável estática e uma variável membro na mesma classe, não compila 
+	Ex.
+		class A{
+			static int a;
+			int a;
+		}
+
+	O QUE SE PODE SOBRE VARIÁVEIS LOCAIS
+
+	/*
+		Posso ter duas varáveis com o mesmo nome em uma classe, sendo uma um parâmetro e outro um atributo
+
+	*/
+	class Pessoa{
+		static int x=0;
+		public static void setX(int x){
+
+		}
+
+	}
+
+	Detalhamento
+		Variável Local com Variável Membro Posso Ter
+		Variável Local com Variável de Instância Posso Ter
+		Variável Local com Variável Local NÃO POSSO TER
+
+	Shadowing //Capacidade de esconder o acesso a uma das variáveis
+	Ex.
+	class Pessoa{
+		static int x=0;
+		public static void setX(int x){
+			this.x = x; //Isso é o Shadowing ... Eu não acesso direto o dado se eu acessar diretamente eu estou acessando o parâmetro
+		}
+
+	}
+
+	Ao escrever uma variável com o mesmo nome quais casos não posso
+		Duas variáveis locais com o mesmo nome não posso
+		Variável membro e variável de instância com mesmo nome não pode
+		Ex.
+			class A{
+				static int x = 0
+				int x = 0;
+			}
+
+		Combinar uma variável de Instância com uma variável local pode
+		Combinar uma variável Estática com uma variável local pode
+		Para esses casos tem o shadowing
+
+		Para forçar a utilização de Classes
+			Em variáveis de instância eu uso o this.
+			Em variáveis de Classe eu uso o Pessoa.
+			Shadowing //Faz acessar as variáveis locais
+
+
+Resumo
+	Foram vistos 
+		-	Variáveis locais que podem ser definidas dentro de um método ou de um construtor ou que vivem dentro de um bloco(Pode ser if ou for)
+		-   Variáveis de instância ou variáveis membro, também chamadas de atributo ou variáveis de objeto
+		-   Variáveis Estáticas ou variáveis da classe, podem ser acessadas de qualquer lugar, desde qie seja referenciada através de um objeto de instância ou referenciada através de um nome da classe
+
+		- Conflito de escopo
+			- Conflito de nomes em escopos distintos
+				- No mesmo escopo não pode
+				- Em escopo static e de instância não pode
+				- Só pode no escopo de static e local ou membro e local
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Modificadores de Acesso
+		- Public 
+		- Private
+		- Default
+		- Protected
+
+
+
+
+
 
   - Nomes de Varniáveis inválidas
   
