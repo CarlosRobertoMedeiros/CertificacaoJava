@@ -1,5 +1,7 @@
-DOCMENTAÇÃO GERAL
-  
+DOCUMENTAÇÃO GERAL
+
+Vídeo Aula 01
+
 Escopo de Variáveis
 	1 - Escopo Local
 		Dentro de um Método ou Construtor
@@ -104,10 +106,25 @@ Resumo
 				- Só pode no escopo de static e local ou membro e local
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Vídeo Aula 02
+
+Ordem de Estrutura do Código
+  Declaração dos Pacotes  1 Pacote Por aquivo 
+  	- packages br.com.exemplo.certificacao;
+  	- Se não informar pacotes o arquivo se encontra no pacote default(pacote raíz)
+
+  Vários imports  //Podemos ter vários imports
+  	import java.util.Date;
+  	import java.io.*;
+
+  Comentários entram em qualquer lugar do código
+  //  Comentário em Linha
+  /*  Comentário com várias linhas */
+  /** Arquivo JavaDoc - Definido pelos 2 ** no inicio */
 
 
-
-
+Continuar em 8 minutos
 
 
 
