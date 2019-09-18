@@ -3,7 +3,7 @@ class EscopoDeVariaveisLocais{
 	
 	public static void main(String[] args){
 		System.out.println("Funcionou");
-		EscopoDeVariaveis escopoDeVariaveis = new EscopoDeVariaveis();
+		EscopoDeVariaveisLocais escopoDeVariaveis = new EscopoDeVariaveisLocais();
 		escopoDeVariaveis.m1();//Chamada do Método Para o Exemplo 1
 		escopoDeVariaveis.m2(); //O Y só existe dentro da construção do bloco do if
 								//Se tentar imprimir Y fora do if gera exceção 

@@ -1,12 +1,11 @@
-DOCUMENTAÇÃO GERAL
-
-Vídeo Aula 01
-
+DOCMENTAÇÃO GERAL
+  
 Escopo de Variáveis
 	1 - Escopo Local
 		Dentro de um Método ou Construtor
 		Ex: Variáveis Local Arquivo: EscopoDeVariaveisLocais.java
 			Uma variável local é uma variável que foi definida dentro de um método ou um construtor, e essas variáveis locais só poderão ser acessadas, dentro daquele escopo.
+			A variável local tem que ser inicializada ao ser criada, caso contrário da erro na compilação
 			Escopos válidos são aqueles definidos no:
 			 	- Próprio método; 
 			 	- Construtor informado através de um parâmetro ou definidos internamente
@@ -25,8 +24,6 @@ Escopo de Variáveis
 		Regra Geral
 			- Variáveis estáticas podem ser acessadas de qualquer lugar, desde que sejam respeitados os modificadores de acesso, podem ser acessadas através do 
 			nome da classe, ou através de instância da classe e ou do tipo
-
-			Continuar vídeo a partir dos 14:00 -> Aula 1 Certificação
 
 
 	Obs: Sobre Variáveis
@@ -97,7 +94,7 @@ Resumo
 	Foram vistos 
 		-	Variáveis locais que podem ser definidas dentro de um método ou de um construtor ou que vivem dentro de um bloco(Pode ser if ou for)
 		-   Variáveis de instância ou variáveis membro, também chamadas de atributo ou variáveis de objeto
-		-   Variáveis Estáticas ou variáveis da classe, podem ser acessadas de qualquer lugar, desde qie seja referenciada através de um objeto de instância ou referenciada através de um nome da classe
+		-   Variáveis Estáticas ou variáveis da classe, podem ser acessadas de qualquer lugar, desde que seja referenciada através de um objeto de instância ou referenciada através de um nome da classe
 
 		- Conflito de escopo
 			- Conflito de nomes em escopos distintos
@@ -106,25 +103,89 @@ Resumo
 				- Só pode no escopo de static e local ou membro e local
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------
-Vídeo Aula 02
+Vídeo 2 - Define a estrutura de uma classe java
+	
+		Organização da Classe Java
 
-Ordem de Estrutura do Código
-  Declaração dos Pacotes  1 Pacote Por aquivo 
-  	- packages br.com.exemplo.certificacao;
-  	- Se não informar pacotes o arquivo se encontra no pacote default(pacote raíz)
+		Começa com Pacote (Apenas um pacote por arquivo)
+			package br.com.roberto.certificacao;
+			Caso eu não fale o pacote o java entende como pacote Default
 
-  Vários imports  //Podemos ter vários imports
-  	import java.util.Date;
-  	import java.io.*;
+		Em seguinda tem os Imports (Pode existir vários Imports no mesmo arquivo)
+			import java.util.Date;
+			import java.io.*;
 
-  Comentários entram em qualquer lugar do código
-  //  Comentário em Linha
-  /*  Comentário com várias linhas */
-  /** Arquivo JavaDoc - Definido pelos 2 ** no inicio */
+		Em Seguida Classe ou Iterface ou Enum
+		Exemplos:
+
+			class Pessoa{
+
+			}
+
+			interface Figura{
+
+			}
+
+			enum Condicoes{
+			 	POSITIVA,
+			 	NEGATIVA
+			}
+
+		Caso Tenha uma classe + 1 interface ou etc  ... o Java ao compilar ele gera um .class para cada um dos tipos(classe,Interface,enum)
 
 
-Continuar em 8 minutos
+		//Os comentários pode estar em qualquer lugar
+		//Comentário Simples Tudo a direita das duas barras é comentário
+		/*
+			Tudo entre o Barra asterisco e asterisco Barra é comentário
+		*/
+
+		/**
+			tudo entre Barra e 2 asteriscos e asterisco e barra 
+			Javadoc Serve para documentar a classe, os pacotes, as interfaces os métodos etc.
+		*/
+
+		 Olhar a classe Pessoa.Java
+		 
+		 Um cuidado Importante a ser tomado é que ....	
+         Dentro de um arquivo .java eu só posso ter uma interface ou classe ou tipo pública
+
+         Outra Regra
+         Se a classe é Publica ela tem que ter o mesmo nome do arquivo
+
+
+         Cuidados Importantes da Aula 2
+
+         um arquivo java, vários tipos Ok
+         um arquivo java, um único público OK
+         um arquivo java, vários público ERRADO
+         um arquivo java, público com o nome do arquivo OK
+         um arquivo java, público com o nome diferente ERRADO
+
+Vídeo 3 -  Crie aplicacoes Java executaveis com um metodo main         
+		
+		Toda classe java chamada na linha de comando deve possuir o método main
+		Para uma classe ser executada tem que ter o método main
+
+		Para compilar um arquivo em java é digitado 
+		javac nomearquivo.java
+
+		para rodar o programa é o nome da classe que tem o método main
+		java nomedaclasse //O nome da classe é igual o nome do arquivo
+
+		//Continuar a partir dos 3 minutos
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
