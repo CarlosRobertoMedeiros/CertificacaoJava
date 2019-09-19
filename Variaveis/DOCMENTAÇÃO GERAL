@@ -173,7 +173,12 @@ Vídeo 3 -  Crie aplicacoes Java executaveis com um metodo main
 		para rodar o programa é o nome da classe que tem o método main
 		java nomedaclasse //O nome da classe é igual o nome do arquivo
 
-		//Continuar a partir dos 3 minutos
+		Para prova de certificação o JDK contém o Javac (Para compilar) JDK vem com JRE
+		Para rodar basta baixar o JRE(Java Runtime Enviroment) e virtual machine
+
+		//Continuar a partir do minuto 7
+
+
 
 
 
